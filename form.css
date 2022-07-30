@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-image: url(bg-intro-desktop.png);
+  background-color: rgba(255, 0, 0, 0.501);
+  background-size: cover;
+  display: flex;
+  width: 80%;
+  position: absolute;
+  top: 12%;
+  bottom: 12%;
+  align-items: center;
+  justify-content: center;
+}
+
+.tit {
+  width: 30%;
+  color: white;
+  padding: 10px;
+}
+.tit p {
+  font-size: 10px;
+  padding: 0px 15px 0px 15px;
+}
+.button1 {
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  border: none;
+  height: 50px;
+  margin: 10px 0px;
+  border-radius: 7px;
+  color: white;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.23);
+  font-weight: 700;
+  font-size: 14px;
+}
+.button2 {
+  width: 90%;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: unset;
+  border: none;
+  color: white;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.23);
+  font-weight: 700;
+}
+.divform {
+  width: 40%;
+  margin-left: 30px;
+}
+.form-div {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+#formsmall {
+  margin: 0% 10% 0% 6%;
+}
+.formbox {
+  width: 90%;
+  width: fit-content;
+}
+.formbox input,
+.formbox button {
+  border: 0.5px solid hsl(246, 25%, 77%);
+  width: 95%;
+  height: 40px;
+  margin: 10px 20px 10px 23px;
+  border-radius: 4px;
+}
+.formbox input::placeholder {
+  color: hsl(249, 7%, 38%);
+  padding-left: 20px;
+}
+.formbox:first-child {
+  margin-top: 20px;
+}
+.policy {
+  text-align: center;
+  font-size: 8px;
+  margin: 6px 10px 30px 10px;
+  font-weight: 600;
+  color: hsl(246, 25%, 77%);
+}
+.policy span {
+  color: red;
+}
+@media screen and (max-width: 675px) {
+  body {
+    background-image: url(bg-intro-mobile.png);
+    background-color: rgba(255, 0, 0, 0.523);
+    align-items: center;
+  }
+  .container {
+    background: none;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 7%;
+    bottom: 20%;
+  }
+  .tit {
+    width: 80%;
+    color: white;
+    margin: auto;
+    text-align: center;
+  }
+
+  .button1 {
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    border: none;
+    height: 50px;
+    margin: 10px 0px;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.23);
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+  }
+  .button2 {
+    width: 90%;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: unset;
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.23);
+    font-weight: 700;
+  }
+  .divform {
+    width: 80%;
+    margin: auto;
+  }
+  .form-div {
+    width: 100%;
+    background-color: white;
+    border-radius: 7px;
+  }
+  #formsmall {
+    margin: 0% 3% 0% 3.3%;
+  }
+  .formbox {
+    width: 90%;
+    width: fit-content;
+  }
+  .formbox input,
+  .formbox button {
+    border: 0.5px solid hsl(246, 25%, 77%);
+    width: 85%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  .policy {
+    width: auto;
+    font-size: 8px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 600;
+    color: hsl(246, 25%, 77%);
+  }
+}
